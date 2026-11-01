@@ -16,7 +16,7 @@ import { useToast } from "@/hooks/use-toast";
 import { Briefcase, Eye, EyeOff, Mail, Lock, User, Building, UserCheck } from "lucide-react";
 
 export const Route = createFileRoute("/register")({
-  component: () => <Register />>,
+  component: () => <Register />,
   head: () => ({
     meta: [
       { title: "Create Account | JobPortal" },

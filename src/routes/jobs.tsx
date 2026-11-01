@@ -22,7 +22,7 @@ import {
 } from "lucide-react";
 
 export const Route = createFileRoute("/jobs")({
-  component: () => <JobListing />>,
+  component: () => <JobListing />,
   head: () => ({
     meta: [
       { title: "Browse Jobs | JobPortal" },
