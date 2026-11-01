@@ -1,1 +1,63 @@
-{"source": "code-archive", "source_name": "seek-connect-io-main.zip", "stack": "Vite + React 19 + react-router-dom + Tailwind 3 + shadcn/radix", "capabilities": [{"capability": "code", "source": "Landing, Login, Register, JobSeekerDashboard (/dashboard), JobListing (/jobs), JobPost (/post-job); shadcn ui kit", "outcome": "migrate", "status": "in_progress", "next_action": "Port pages to TanStack Start routes, replace react-router-dom with @tanstack/react-router, port theme to src/styles.css"}, {"capability": "schema", "source": "absent - no database, no schema files, no env vars", "outcome": "none", "status": "verified", "next_action": "No database in source; nothing to migrate"}, {"capability": "records", "source": "absent - no record export in archive", "outcome": "none", "status": "verified", "next_action": "No data store in source; all page content is hardcoded demo data"}, {"capability": "auth", "source": "simulated only - Login/Register forms use setTimeout toasts, Google/LinkedIn buttons are inert; no auth provider", "outcome": "recreate", "status": "verified", "next_action": "Port as-is (demo behavior preserved); offer Lovable auth as follow-up"}, {"capability": "external_providers", "source": "none detected - no fetch calls, no APIs, no storage, no payments", "outcome": "none", "status": "verified", "next_action": "Nothing to preserve"}, {"capability": "public_endpoints", "source": "none - pure SPA, no API routes, no webhooks, no schedules", "outcome": "none", "status": "verified", "next_action": "Nothing to preserve"}, {"capability": "cutover", "source": "not published; no domain or external callers", "outcome": "none", "status": "verified", "next_action": "No cutover needed"}, {"capability": "verification", "source": "all six routes render; navigation between them; not-found fallback for dead footer links (same as source)", "outcome": "verify", "status": "pending", "next_action": "Playwright check of each route and a nav flow"}]}
+{
+  "source": "code-archive",
+  "source_name": "seek-connect-io-main.zip",
+  "stack": "Vite + React 19 + react-router-dom + Tailwind 3 + shadcn/radix",
+  "capabilities": [
+    {
+      "capability": "code",
+      "source": "Landing, Login, Register, JobSeekerDashboard (/dashboard), JobListing (/jobs), JobPost (/post-job); shadcn ui kit",
+      "outcome": "migrate",
+      "status": "verified",
+      "next_action": "All six routes render, navigation and 404 fallback verified via Playwright"
+    },
+    {
+      "capability": "schema",
+      "source": "absent - no database, no schema files, no env vars",
+      "outcome": "none",
+      "status": "verified",
+      "next_action": "No database in source; nothing to migrate"
+    },
+    {
+      "capability": "records",
+      "source": "absent - no record export in archive",
+      "outcome": "none",
+      "status": "verified",
+      "next_action": "No data store in source; all page content is hardcoded demo data"
+    },
+    {
+      "capability": "auth",
+      "source": "simulated only - Login/Register forms use setTimeout toasts, Google/LinkedIn buttons are inert; no auth provider",
+      "outcome": "recreate",
+      "status": "verified",
+      "next_action": "Port as-is (demo behavior preserved); offer Lovable auth as follow-up"
+    },
+    {
+      "capability": "external_providers",
+      "source": "none detected - no fetch calls, no APIs, no storage, no payments",
+      "outcome": "none",
+      "status": "verified",
+      "next_action": "Nothing to preserve"
+    },
+    {
+      "capability": "public_endpoints",
+      "source": "none - pure SPA, no API routes, no webhooks, no schedules",
+      "outcome": "none",
+      "status": "verified",
+      "next_action": "Nothing to preserve"
+    },
+    {
+      "capability": "cutover",
+      "source": "not published; no domain or external callers",
+      "outcome": "none",
+      "status": "verified",
+      "next_action": "No cutover needed"
+    },
+    {
+      "capability": "verification",
+      "source": "all six routes render; navigation between them; not-found fallback for dead footer links (same as source)",
+      "outcome": "verify",
+      "status": "verified",
+      "next_action": "Done: build OK, tests pass, 6 routes + nav flow + 404 verified"
+    }
+  ]
+}
