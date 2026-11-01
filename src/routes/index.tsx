@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 
 export const Route = createFileRoute("/")({
-  component: Landing,
+  component: () => <Landing />>,
   head: () => ({
     meta: [
       { title: "JobPortal – Find Your Dream Job" },

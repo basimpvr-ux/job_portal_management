@@ -33,7 +33,7 @@ import {
 } from "lucide-react";
 
 export const Route = createFileRoute("/post-job")({
-  component: JobPost,
+  component: () => <JobPost />>,
   head: () => ({
     meta: [
       { title: "Post a Job | JobPortal" },
